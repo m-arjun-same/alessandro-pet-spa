@@ -3,345 +3,217 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alessandro Pet Spa — Pet Grooming &amp; Daycare · Melrose, Los Angeles · Since 2005</title>
-<meta name="description" content="Alessandro Pet Spa is a full-service pet grooming salon on Melrose Avenue, Los Angeles: dog and cat grooming, bathing, nails, ears, teeth, de-shedding and cage-free daycare — a tranquil luxury experience since 2005.">
+<title>Alessandro Pet Spa — Pet Grooming & Daycare · Melrose Ave, Los Angeles</title>
+<meta name="description" content="Alessandro Pet Spa — tranquil, luxury pet grooming on Melrose Avenue, Los Angeles, since 2005. Dog & cat grooming, baths, daycare and overnight stays. (323) 644-4946.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/css/site.css?v=10">
+<link rel="preload" href="assets/fonts/newsreader-italic-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/spa.css?v=1">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"Alessandro Pet Spa","description":"Full-service pet grooming and daycare in Los Angeles: dog and cat grooming, bathing, nail trimming, ear cleaning, teeth brushing, de-shedding, flea and tick treatments.","telephone":"(323) 644-4946","email":"alessandropetspa@yahoo.com","priceRange":"$","address":{"@type":"PostalAddress","streetAddress":"7221 Melrose Avenue","addressLocality":"Los Angeles","addressRegion":"CA","postalCode":"90046"}}
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Alessandro Pet Spa","description":"Full-service pet grooming and daycare in Los Angeles since 2005.","telephone":"+1-323-644-4946","email":"alessandropetspa@yahoo.com","priceRange":"$","address":{"@type":"PostalAddress","streetAddress":"7221 Melrose Avenue","addressLocality":"Los Angeles","addressRegion":"CA","postalCode":"90046"},"openingHours":["Mo-Fr 08:00-17:00","Sa-Su 09:00-17:00"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7"}}
 </script>
 </head>
 <body>
 
-<div class="preloader" id="preloader" aria-hidden="true">
-  <div class="preloader__name">ALESSANDRO</div>
-  <div class="preloader__bar"><span id="preBar"></span></div>
-  <div class="preloader__pct" id="prePct">0%</div>
-</div>
-
-<header class="hdr">
-  <a class="hdr__logo" href="#top" data-goto>alessandro<em>.</em></a>
-  <p class="hdr__tag">Pet grooming &amp; daycare — Melrose, since 2005</p>
+<header class="hdr" id="hdr">
+  <a class="hdr__logo" href="#top">alessandro<em>·pet spa</em></a>
+  <nav class="hdr__nav">
+    <a href="#reveal">The Reveal</a><a href="#worlds">Dogs & Cats</a><a href="#menu">Treatments</a><a href="#day">A Day Here</a>
+  </nav>
   <div class="hdr__r">
-    <a class="hdr__book" href="#book" data-goto>Book a groom</a>
-    <button class="hdr__burger" id="menuBtn" aria-label="Open menu"><span></span><span></span></button>
+    <a class="hdr__tel" href="tel:+13236444946">(323) 644-4946</a>
+    <a class="hdr__book" href="#book">Book a visit</a>
   </div>
 </header>
 
-<nav class="mmenu" id="menu" aria-hidden="true">
-  <div class="mmenu__grid">
-    <a class="mmenu__link" href="#work" data-goto><img src="assets/img/ghost/work.webp" alt=""><span>Services</span></a>
-    <a class="mmenu__link" href="#route" data-goto><img src="assets/img/ghost/approach.webp" alt=""><span>The grooming route</span></a>
-    <a class="mmenu__link" href="#about" data-goto><img src="assets/img/ghost/about.webp" alt=""><span>About</span></a>
-  </div>
-  <div class="mmenu__foot">
-    <a href="#book" data-goto class="mmenu__book">Book a groom →</a>
-    <p>Dogs · Cats · Baths · Nails · Ears · Teeth · De-shedding · Daycare</p>
-  </div>
-</nav>
+<main id="top">
 
-<div class="sheet" id="top">
-<main>
-
-  <!-- DAWN -->
-  <section class="dawn">
-    <canvas class="dawn__shader" id="dawnShader" aria-hidden="true"></canvas>
-    <div class="dawn-stage"><canvas class="dawn__gl" id="grainCanvas" aria-label="Alessandro"></canvas></div>
-    <div class="dawn-row margins">
-      <p class="dawn__lead mask">Welcome to <b>Alessandro Pet Spa</b>, a full-service grooming salon on Melrose Avenue. Experienced pet stylists providing a tranquil luxury experience since 2005.</p>
-      <div class="dawn__side">
-        <div class="dawn__now"><span class="dawn__now-k">Now</span><span class="dawn__now-v" id="nowRot">Dog grooming</span></div>
-        <p class="dawn__side-p">Nervous, tangled, shedding — the gentle cause, not the rush.</p>
+  <!-- 1 · ARRIVAL HERO -->
+  <section class="hero">
+    <div class="hero__media"><img src="assets/img/work/doggroom/still-xl.webp" alt="A freshly groomed dog at Alessandro Pet Spa" fetchpriority="high"></div>
+    <div class="hero__shade"></div>
+    <div class="hero__in margins">
+      <p class="hero__kick rv">Melrose Avenue · Los Angeles · Since 2005</p>
+      <h1 class="hero__name"><span class="rv">Alessandro</span><span class="hero__sub rv">PET SPA</span></h1>
+      <p class="hero__tag rv">Experienced pet stylists providing a <em>tranquil, luxury</em> experience — for dogs, cats, and the humans who adore them.</p>
+      <div class="hero__meta rv">
+        <span>★ 4.7 on Google</span><span class="dot"></span>
+        <span>Best of 2025 — Pet Groomer</span><span class="dot"></span>
+        <span>Cage-free, always</span>
       </div>
     </div>
-    <div class="dawn-foot margins">
-      <h1 class="mask">From a tangled coat to a gentle bath to <em>a pet that feels new.</em></h1>
-      <p class="dawn-foot__r">Scroll<br>↓</p>
-    </div>
+    <a class="hero__scroll" href="#reveal" aria-label="Scroll to the reveal">Scroll<span>↓</span></a>
   </section>
 
-  <!-- WORK -->
-  <section class="work" id="work">
-    <div class="work-head margins">
-      <p class="kick reveal">Selected services · grooming to daycare</p>
-      <div class="wh-names reveal" id="stamps"></div>
-      <h2 class="mask">Eight services, from the first call to <em>the final brush.</em></h2>
-    </div>
-    <div class="marquee" aria-hidden="true"><div class="marquee__in" id="marqueeIn"></div></div>
-    <div class="covers" id="covers"></div>
-  </section>
-
-  <!-- IDEA -->
-  <section class="idea">
-    <div class="idea-grid margins">
-      <div class="idea-stage reveal">
-        <svg class="badge" viewBox="0 0 200 200" aria-hidden="true">
-          <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
-          <text><textPath href="#circ">ALESSANDRO PET SPA • SINCE 2005 • MELROSE AVENUE • </textPath></text>
-        </svg>
-        <span class="badge__bolt">🐾</span>
-      </div>
-      <div class="idea-copy">
-        <p class="kick reveal">The idea · one stylist, full care</p>
-        <h2 class="mask">First I meet the pet, learn the coat and earn their trust. Then the groom gets a plan, a pace and a <em>calm finish.</em></h2>
-        <div class="nums">
-          <div class="num reveal"><b data-count="20">0</b><span>years on Melrose — grooming since 2005</span></div>
-          <div class="num reveal"><b data-count="10">0</b><span>services, first call to final brush</span></div>
-          <div class="num reveal"><b>Call → Pampered</b><span>booked, consulted, groomed, rested, handed over</span></div>
-        </div>
-        <ul class="proof reveal">
-          <li>A special knack for nervous pets — slow and patient</li>
-          <li>Consult before the cut, agreed with you first</li>
-          <li>Cage-free play space — pets are never crated</li>
-          <li>Every coat, nail and ear checked before pick-up</li>
-          <li>A little gift toy goes home after the groom</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES (paper) -->
-  <section class="paper">
+  <!-- 2 · THE REVEAL — before / after groom wipe -->
+  <section class="reveal-sec" id="reveal">
     <div class="margins">
-      <div class="sec-head">
-        <p class="kick reveal">What we do · the full list</p>
-        <h2 class="mask">Seven core grooms, <em>done gently.</em></h2>
+      <p class="kick rv">The reveal · drag the comb</p>
+      <h2 class="h2 rv">Shaggy in. <em>Stunning out.</em></h2>
+      <p class="lede rv">Every appointment ends with this moment. Slide the comb across and watch the groom happen — bath, brush, cut and finish, all in one pair of experienced hands.</p>
+      <div class="ba rv" id="ba" role="slider" aria-label="Before and after grooming comparison" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
+        <img class="ba__after" src="assets/img/work/doggroom/still.webp" alt="Dog after a full groom at Alessandro Pet Spa">
+        <div class="ba__beforeWrap"><img class="ba__before" id="baBefore" src="assets/img/work/doggroom/still.webp" alt="The same dog before the finish — coat dull and overgrown (graded)"></div>
+        <span class="ba__tag ba__tag--b">Before</span>
+        <span class="ba__tag ba__tag--a">After</span>
+        <div class="ba__handle"><span class="ba__grip">⇆</span></div>
       </div>
-      <div class="rows" id="rows"></div>
-      <div class="sec-head sec-head--2">
-        <h2 class="mask">Everything else, <em>under one roof.</em></h2>
-        <p class="caps__note reveal">Hover a line for a real example.</p>
-      </div>
-      <ul class="caps__list" id="capsList"></ul>
-    </div>
-    <div class="paper__preview" id="rowPreview"><img alt=""></div>
-  </section>
-
-  <!-- DAYCARE (Alessandro-only) -->
-  <section class="daycare" id="daycare">
-    <div class="idea-grid margins">
-      <div class="idea-copy daycare-copy">
-        <p class="kick reveal">Daycare &amp; boarding · the special</p>
-        <h2 class="mask">A fun, safe day while <em>you are away.</em></h2>
-        <p class="daycare-p reveal">Your pet enjoys a relaxing, playful day in a safe, loving environment — cage-free, with room to rest and play between grooms.</p>
-        <ul class="proof reveal">
-          <li>Brush out included</li>
-          <li>Nail trim included</li>
-          <li>One outdoor walk per day included</li>
-        </ul>
-      </div>
-      <div class="daycare-prices">
-        <div class="num reveal"><b>$30</b><span>Half day — play, rest and a brush out</span></div>
-        <div class="num reveal"><b>$55</b><span>Full day — the whole day, cage-free</span></div>
-        <div class="num reveal"><b>$85</b><span>Overnight stay — settled in for the night</span></div>
-        <a class="press reveal" href="#book" data-goto>Book daycare</a>
-      </div>
+      <p class="ba__note rv">Real guests, real grooms — photos from the spa floor.</p>
     </div>
   </section>
 
-  <!-- DOGS / CATS SPLIT (Alessandro-only) -->
-  <section class="split">
+  <!-- 3 · TWO WORLDS — dogs / cats -->
+  <section class="worlds" id="worlds">
     <div class="margins">
-      <div class="sec-head">
-        <p class="kick reveal">Two kinds of guests</p>
-        <h2 class="mask">Dogs get the show. <em>Cats get the specialist.</em></h2>
-      </div>
-      <div class="split-grid">
-        <article class="split-card reveal">
-          <img src="assets/img/split-dogs.webp" alt="Dog being styled at the grooming table" loading="lazy">
-          <h3>For dogs</h3>
-          <p>Breed-specific cuts and custom styles, baths for every coat, de-shedding for the heavy shedders — and a play space, never a crate, while they wait.</p>
-          <ul class="proof">
-            <li>Haircuts, styling &amp; finishing</li>
-            <li>Standard, medicated &amp; flea baths</li>
-            <li>Puppy grooms — a gentle first visit</li>
+      <p class="kick rv">Two worlds · one spa</p>
+      <h2 class="h2 rv">Dogs get the party. <em>Cats get the quiet.</em></h2>
+    </div>
+    <div class="worlds__split margins">
+      <article class="world world--dogs is-open" data-world>
+        <img src="assets/img/split-dogs.webp" alt="Dog being trimmed at the grooming table">
+        <div class="world__body">
+          <h3>The Dogs' World</h3>
+          <p class="world__lead">Breed-specific cuts, custom styles, and a cage-free play space while they wait their turn at the table.</p>
+          <ul>
+            <li>Breed & custom haircuts</li>
+            <li>Standard, medicated & flea baths</li>
+            <li>De-shedding for heavy coats</li>
+            <li>Puppy first grooms, gently introduced</li>
           </ul>
-        </article>
-        <article class="split-card reveal">
-          <img src="assets/img/split-cats.webp" alt="Cat being bathed gently" loading="lazy">
-          <h3>For cats</h3>
-          <p>Real cat grooming is rare — here it is a specialty. Gentle handling for even the most finicky felines, and detailed lion cuts for long-haired cats.</p>
-          <ul class="proof">
-            <li>Lion cuts — long-haired cats, 3.5–4 hours of detail</li>
-            <li>Detangling, baths &amp; nail care</li>
-            <li>Slow, quiet handling, trust first</li>
+        </div>
+      </article>
+      <article class="world world--cats" data-world>
+        <img src="assets/img/split-cats.webp" alt="Cat mid-bath at the spa, calmly soaped">
+        <div class="world__body">
+          <h3>The Cats' World</h3>
+          <p class="world__lead">Slow hands, low voices, zero rush. Cats are groomed on their terms — even the most finicky felines.</p>
+          <ul>
+            <li>Lion cuts — our specialty, 3.5–4 hours of detail</li>
+            <li>Detangling & gentle bathing</li>
+            <li>Nail trims in about ten minutes</li>
+            <li>Kitten first grooms, positively introduced</li>
           </ul>
-        </article>
-      </div>
+        </div>
+      </article>
     </div>
+    <p class="worlds__foot margins rv">Nervous pet? That's our favourite kind — gaining their trust is the first service we offer, and it's free.</p>
   </section>
 
-  <!-- ABOUT -->
-  <section class="about" id="about">
-    <div class="about-grid margins">
-      <figure class="about-stage reveal"><img src="assets/img/about.webp" alt="A groomed cat at Alessandro Pet Spa" width="720" height="900"></figure>
-      <div class="about-copy">
-        <p class="kick reveal">Alessandro Pet Spa · Melrose Avenue</p>
-        <p class="about__p mask">I take pets from the first call to the final brush, working directly for the families of Los Angeles — you book with us, we do the grooming. No chain, no middleman.</p>
-        <p class="about__p mask">With over 20 years of experience, our animal-loving stylist has a special knack for gaining the trust of even the most nervous pets.</p>
-        <p class="about__p mask">Every groom comes with a walkthrough: you hear about the coat, the cut and the care yourself, before we call it done.</p>
-      </div>
-    </div>
+  <!-- 4 · TREATMENT MENU -->
+  <section class="menu" id="menu">
     <div class="margins">
-      <div class="sec-head sec-head--2">
-        <p class="kick reveal">The grooming kit · what we use</p>
-        <h2 class="mask">Tools for <em>every coat.</em></h2>
-      </div>
-      <div class="wall" id="wall"></div>
+      <p class="kick rv">The treatment menu</p>
+      <h2 class="h2 rv">Ten ways to <em>pamper.</em></h2>
+      <p class="lede rv">Tap a treatment to see what it involves. Grooming prices are quoted after we meet your pet and their coat — the only fixed numbers are the daycare rates, listed below.</p>
+      <div class="menu__list" id="menuList"></div>
     </div>
   </section>
 
-  <!-- ROUTE -->
-  <section class="route" id="route">
-    <div class="route__head">
-      <p class="kick reveal">— The grooming route · from your call to a pampered pet —</p>
-      <h2 class="route__h reveal">Call, drop-off, groom: <em>one route</em></h2>
-      <p class="route__sub reveal">Keep scrolling and follow a pet as it travels it, step by step.</p>
-    </div>
-    <div class="route__stage" id="routeStage">
-      <div class="route__sticky">
-        <canvas class="route__gl" id="routeCanvas"></canvas>
-        <div class="route__plate" id="routePlate"><span id="plateKick"></span><b id="plateTitle"></b><i id="plateLine"></i></div>
-        <div class="route__list" id="routeList"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- GUESTS + STEPS (snake: side-scrolling) -->
-  <section class="snake" id="snake">
-    <div class="snake-view">
-      <div class="snake-cam" id="snakeCam">
-        <div class="snake-plane" id="snakePlane">
-          <div class="snake-row snake-a">
-            <div class="snake-head">
-              <p class="kick">Who we groom</p>
-              <h2 class="mask">Dogs, cats, puppies — <em>everyone.</em></h2>
-              <p class="xp-route">Four kinds of guests, one standard of care: gentle, patient, calm.</p>
-            </div>
-            <div class="xp">
-              <div class="xp-b"><b>Dogs</b><span>Full grooms, baths and de-shedding for every breed and size.</span></div>
-              <div class="xp-b"><b>Cats</b><span>Specialist cat grooming, lion cuts and gentle baths.</span></div>
-              <div class="xp-b"><b>Little ones</b><span>Puppies and kittens, introduced to grooming gently.</span></div>
-              <div class="xp-b"><b>Nervous pets</b><span>Rescues, seniors and anxious guests, taken slowly.</span></div>
-            </div>
-          </div>
-          <div class="snake-gap" aria-hidden="true"></div>
-          <div class="snake-row snake-b">
-            <div class="snake-head">
-              <p class="kick">How a visit runs</p>
-              <h2 class="mask">Eight steps, <em>no surprises.</em></h2>
-              <p class="xp-route">The same route on every visit, first puppy groom or full lion cut.</p>
-            </div>
-            <ol class="steps" id="steps"></ol>
-          </div>
+  <!-- 5 · A DAY AT THE SPA -->
+  <section class="day" id="day">
+    <div class="margins">
+      <p class="kick kick--light rv">Daycare & boarding · a day at the spa</p>
+      <h2 class="h2 h2--light rv">Their day, <em>hour by lovely hour.</em></h2>
+      <div class="day__grid">
+        <div class="timeline" id="timeline">
+          <span class="timeline__line"><span class="timeline__fill" id="tlFill"></span></span>
+          <div class="tstop rv"><b>Arrival</b><span>Check-in, a sniff around, and straight into the play space — never a crate.</span></div>
+          <div class="tstop rv"><b>Play</b><span>Cage-free social time with the day's guests, supervised by the team.</span></div>
+          <div class="tstop rv"><b>Bath & brush</b><span>A warm bath and a full brush-out — every daycare visit includes it.</span></div>
+          <div class="tstop rv"><b>The walk</b><span>One outdoor walk a day along Melrose, included in every stay.</span></div>
+          <div class="tstop rv"><b>Nails & rest</b><span>A nail trim, then a proper rest before home time.</span></div>
+          <div class="tstop rv"><b>Pick-up</b><span>Collected soft, clean and smelling wonderful — with a little gift toy.</span></div>
+        </div>
+        <div class="rates">
+          <article class="rate rv"><span class="rate__k">Half day</span><b class="rate__p">$30</b><span class="rate__d">A morning or afternoon of play, bath & brush.</span></article>
+          <article class="rate rate--feat rv"><span class="rate__k">Full day</span><b class="rate__p">$55</b><span class="rate__d">The whole lovely day, arrival to pick-up.</span><em class="rate__flag">Most loved</em></article>
+          <article class="rate rv"><span class="rate__k">Overnight stay</span><b class="rate__p">$85</b><span class="rate__d">A full day, a calm night, and a morning walk.</span></article>
+          <p class="rates__inc rv">Every stay includes: <b>Brush out</b> · <b>Nail trim</b> · <b>One outdoor walk per day</b></p>
         </div>
       </div>
     </div>
-    <svg class="snake-map" id="snakeMap" viewBox="0 0 40 30" aria-hidden="true"><path d="M3 22 C 12 6, 20 26, 27 12 S 36 8, 38 14"/><circle id="snakeDot" cx="3" cy="22" r="2.6"/></svg>
   </section>
 
-  <!-- TRUST / AWARD + REVIEWS (Alessandro-only) -->
-  <section class="test">
-    <div class="test-in margins">
-      <svg class="test-ring" viewBox="0 0 100 100" aria-hidden="true">
-        <circle class="brush" cx="50" cy="50" r="47.5"/>
-        <circle class="brush brush2" cx="50.8" cy="49.4" r="47"/>
-      </svg>
-      <p class="kick reveal">BusinessRate · Best of 2025</p>
-      <h2 class="test-h mask">Best pet groomer, <em>Melrose.</em></h2>
-      <p class="sec-p reveal">BEST OF BusinessRate 2025 — Pet Groomer, Melrose, Los Angeles. Google 4.7. On Melrose Avenue since 2005, with a cage-free play space and a TOP DOG trophy on the shelf.</p>
-      <div class="reviews reveal">
-        <blockquote>“Alessandro is the perfect groomer for my baby girl. She was looking kind of raggedy when I brought her in and he explained what we could do during a brief consultation and also made some very valuable suggestions! I loved his demeanor and the vibe of the shop.”<span>— Google review</span></blockquote>
-        <blockquote>“As the owner of a dog rescue and so many different dogs that come in and out needing grooming — Alessandro is the BEST and truly cares about each and every client's wellbeing. We recommend coming here for ALL of our alumni and definitely for your baby!!”<span>— Google review</span></blockquote>
-      </div>
-      <div class="presses reveal">
-        <a class="press" href="#book" data-goto>Book a groom</a>
-        <a class="press press--ghost" href="#work" data-goto>See the services</a>
+  <!-- 6 · TRUST -->
+  <section class="trust" id="trust">
+    <div class="margins trust__in">
+      <p class="kick rv">The shelf & the scoreboard</p>
+      <div class="trust__big rv"><span data-count="4.7">0.0</span><span class="trust__star">★</span></div>
+      <h2 class="h2 rv">Best of <em>2025.</em> On Melrose <em>since 2005.</em></h2>
+      <p class="lede rv">BEST OF BusinessRate 2025 — Pet Groomer, Melrose, Los Angeles, from Google's all-time reviews. A TOP DOG trophy sits on our shelf, next to twenty years of regulars.</p>
+      <div class="quotes">
+        <blockquote class="rv">“Alessandro is the perfect groomer for my baby girl. She was looking kind of raggedy when I brought her in and he explained what we could do during a brief consultation and also made some very valuable suggestions! I loved his demeanor and the vibe of the shop.”<span>— Google review</span></blockquote>
+        <blockquote class="rv">“As the owner of a dog rescue and so many different dogs that come in and out needing grooming — Alessandro is the BEST and truly cares about each and every client's wellbeing. We recommend coming here for ALL of our alumni and definitely for your baby!!”<span>— Google review</span></blockquote>
       </div>
     </div>
   </section>
 
-  <!-- FINALE -->
-  <section class="finale">
-    <div class="finale-stage" id="inkStage">
-      <canvas class="finale__gl" id="finaleCanvas" aria-label="Alessandro — signature"></canvas>
-      <div class="ink-line" aria-hidden="true"></div>
-      <div class="ink-touch" id="inkTouch" aria-hidden="true"></div>
-      <p class="ink-hint" id="inkHint"><span class="hold"></span> Hold on the line to sign</p>
-      <button class="ink-done" id="inkDone" type="button">Done</button>
-      <div class="seal" id="seal" aria-hidden="true"><span class="seal__b">🐾</span><span class="seal__t">Alessandro</span><span class="seal__s">Groomed &amp; happy</span></div>
-      <button class="ink-again" id="inkAgain" type="button">Sign again</button>
-    </div>
-    <div class="finale-copy margins">
-      <h2 class="mask">Bring your pet. <em>We'll take it to pampered.</em></h2>
-      <a class="btn" href="#book" data-goto>Book a groom</a>
-    </div>
-  </section>
-
-</main>
-</div>
-
-<!-- FOOTER / BOOKING — the booking sheet -->
-<footer class="curtain" id="book">
-  <div class="margins curtain__in">
-    <div class="sheet-head" aria-hidden="true">
-      <span>Booking sheet</span><span class="sheet-head__no">№ 001 — Alessandro Pet Spa</span><span>Since 2005</span>
-    </div>
-    <div class="book-grid">
-      <div class="book-left">
-        <h2 class="mask">Tell me who <em>needs a groom.</em></h2>
-        <p class="book-lede reveal">Fill the sheet and we will call you back. Or call the spa yourself on (323) 644-4946 — 7221 Melrose Avenue, Los Angeles, parking in the back, between Formosa and Alta Vista.</p>
-        <div class="assure">
-          <div class="assure__row reveal"><b>Call the spa</b><span>(323) 644-4946 · Mon–Fri 8–5, Sat–Sun 9–5.</span></div>
-          <div class="assure__row reveal"><b>Cage-free, always</b><span>Pets play and rest in the open — never crated.</span></div>
-          <div class="assure__row reveal"><b>Gentle first visits</b><span>Nervous pets are taken slowly, trust first.</span></div>
-        </div>
+  <!-- 7 · BOOKING -->
+  <section class="book" id="book">
+    <div class="margins book__grid">
+      <div class="book__info">
+        <p class="kick rv">Book a visit</p>
+        <h2 class="h2 rv">Your pet's <em>spa day</em> starts here.</h2>
+        <p class="lede rv">Send the appointment request and we'll call you back to confirm. Prefer to talk? Call us — the person who answers is the person who grooms.</p>
+        <dl class="info rv">
+          <div><dt>Visit</dt><dd>7221 Melrose Avenue, Los Angeles, CA 90046<br><small>Parking in the back, between Formosa and Alta Vista</small></dd></div>
+          <div><dt>Call</dt><dd><a href="tel:+13236444946">(323) 644-4946</a> · <a href="mailto:alessandropetspa@yahoo.com">alessandropetspa@yahoo.com</a></dd></div>
+          <div><dt>Hours</dt><dd>Mon–Fri · 8:00 AM – 5:00 PM<br>Sat–Sun · 9:00 AM – 5:00 PM</dd></div>
+          <div><dt>Follow</dt><dd><a href="https://www.instagram.com/alessandropetspa" target="_blank" rel="noopener">@alessandropetspa</a> — grooms, guests & glow-ups</dd></div>
+        </dl>
       </div>
-      <div class="book-right">
-        <form class="jform" id="bookForm" action="#" method="post" novalidate>
-          <label class="jfield"><span>Your name</span>
-            <input name="name" type="text" autocomplete="name" placeholder="Full name" required>
-          </label>
-          <label class="jfield"><span>Phone</span>
-            <input name="contact" type="tel" autocomplete="tel" placeholder="Number we should call back" required>
-          </label>
-          <label class="jfield"><span>Your pet &amp; the groom</span>
-            <textarea name="job" rows="4" placeholder="Pet's name, breed, and what they need" required></textarea>
-          </label>
-          <fieldset class="jchips">
-            <legend>Booking for</legend>
-            <label><input type="radio" name="size" value="Dog" checked><span>Dog</span></label>
-            <label><input type="radio" name="size" value="Cat"><span>Cat</span></label>
-            <label><input type="radio" name="size" value="Puppy or kitten"><span>Puppy or kitten</span></label>
-            <label><input type="radio" name="size" value="Daycare"><span>Daycare</span></label>
+      <div class="book__formwrap rv">
+        <form class="bform" id="bookForm" novalidate>
+          <label class="f"><span>Your name</span><input name="owner" type="text" autocomplete="name" placeholder="Full name" required></label>
+          <label class="f"><span>Phone</span><input name="phone" type="tel" autocomplete="tel" placeholder="Number we should call back" required></label>
+          <label class="f"><span>Pet's name</span><input name="pet" type="text" placeholder="Who's coming in?" required></label>
+          <fieldset class="f chips"><legend>Pet</legend>
+            <label><input type="radio" name="species" value="Dog" checked><span>Dog</span></label>
+            <label><input type="radio" name="species" value="Cat"><span>Cat</span></label>
           </fieldset>
-          <p class="jform__err" id="formErr" hidden>Three things missing: your name, a number to call back, and what your pet needs.</p>
-          <button class="jform__send" type="submit">Send the booking sheet <i>→</i></button>
-          <p class="jform__note">Sending puts your pet in our booking book. Nothing is shared with anyone else. Daycare: $30 half day · $55 full day · $85 overnight.</p>
+          <label class="f"><span>Service</span>
+            <select name="service" required>
+              <option value="">Choose a treatment…</option>
+              <option>Dog Grooming</option><option>Cat Grooming</option>
+              <option>Dog Bathing</option><option>Cat Bathing</option>
+              <option>Nail Trimming & Filing</option><option>Ear Cleaning</option>
+              <option>Teeth Brushing & Dental</option><option>De-Shedding</option>
+              <option>Flea & Tick Treatment</option><option>Puppy / Kitten First Groom</option>
+              <option>Daycare — Half Day ($30)</option><option>Daycare — Full Day ($55)</option>
+              <option>Overnight Stay ($85)</option>
+            </select>
+          </label>
+          <label class="f"><span>Preferred day</span><input name="date" type="date"></label>
+          <label class="f"><span>Anything we should know?</span><textarea name="notes" rows="3" placeholder="Nervous, matted, senior, first visit…"></textarea></label>
+          <p class="bform__err" id="formErr" hidden></p>
+          <button class="bform__send" type="submit">Request appointment <i>→</i></button>
+          <p class="bform__note">No payment now — we confirm every appointment by phone first.</p>
         </form>
-        <div class="sheet-done" id="sheetDone" hidden>
-          <div class="stamp-big" aria-hidden="true">Booking<br>logged</div>
-          <h3>Sheet received.</h3>
-          <p id="doneText">We will call you back shortly.</p>
-          <dl class="done-sum" id="doneSum"></dl>
-          <button class="jform__send jform__send--ghost" id="againBtn" type="button">Book another groom</button>
+        <div class="bdone" id="bookDone" hidden>
+          <span class="bdone__paw">🐾</span>
+          <h3>Request received.</h3>
+          <p id="doneText"></p>
+          <dl class="bdone__sum" id="doneSum"></dl>
+          <button class="bform__send bform__send--ghost" id="againBtn" type="button">Book another pet</button>
         </div>
       </div>
     </div>
-    <div class="book-foot">
-      <span class="book-mark">alessandro<em>.</em></span>
-      <p class="foot__col">© 2026 Alessandro Pet Spa — 7221 Melrose Avenue, Los Angeles, CA 90046 · (323) 644-4946 · alessandropetspa@yahoo.com · @alessandropetspa · Mon–Fri 8 AM–5 PM, Sat–Sun 9 AM–5 PM · Set in Archivo and Newsreader (SIL Open Font Licence) · Photos: free licences via Pexels, credited in humans.txt</p>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="margins">
+    <p class="foot__name">alessandro<em>.</em></p>
+    <div class="foot__cols">
+      <p>Pet Spa · Melrose Avenue, Los Angeles<br>Tranquil luxury grooming since 2005</p>
+      <p>Mon–Fri 8–5 · Sat–Sun 9–5<br>(323) 644-4946</p>
+      <p>© 2026 Alessandro Pet Spa<br>Set in Archivo & Newsreader · Photos from the spa floor & free licences, credited in humans.txt</p>
     </div>
   </div>
 </footer>
 
-<div class="frame" aria-hidden="true"><span>Alessandro · Pet Spa</span><span>Book a groom ↓</span></div>
-
-<script src="assets/js/lenis.min.js?v=10"></script>
-<script src="assets/js/main.js?v=10"></script>
-<script src="assets/js/shader.js?v=10"></script>
-<script src="assets/js/grain.js?v=10"></script>
-<script src="assets/js/route.js?v=10"></script>
-<script src="assets/js/finale.js?v=10"></script>
+<script src="assets/js/vendor/lenis.min.js?v=1"></script>
+<script src="assets/js/vendor/gsap.min.js?v=1"></script>
+<script src="assets/js/vendor/ScrollTrigger.min.js?v=1"></script>
+<script src="assets/js/spa.js?v=1"></script>
 </body>
 </html>
