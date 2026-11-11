@@ -146,8 +146,16 @@ if (form){
       return;
     }
     err.hidden = true;
+    var notes = (fd.get("notes")||"").toString().trim();
+    var body = ["Appointment request from the website","",
+      "Name: " + owner, "Phone: " + phone, "Pet: " + pet + " (" + species + ")",
+      "Service: " + service, "Preferred day: " + (date || "First available"),
+      "Notes: " + (notes || "—")].join("\n");
+    var mail = "mailto:alessandropetspa@yahoo.com"
+      + "?subject=" + encodeURIComponent("Appointment request — " + pet + " · " + service)
+      + "&body=" + encodeURIComponent(body);
     document.getElementById("doneText").textContent =
-      "Thanks, " + owner.split(" ")[0] + " — we'll call you on " + phone + " to confirm " + pet + "'s appointment.";
+      "Thanks, " + owner.split(" ")[0] + " — your email app should open with this request addressed to the spa. Press Send there, and we'll call you on " + phone + " to confirm " + pet + "'s appointment.";
     var sum = document.getElementById("doneSum");
     sum.innerHTML = "";
     [["Pet", pet + " (" + species + ")"], ["Service", service], ["Preferred day", date || "First available"], ["We call", phone]].forEach(function(pair){
@@ -158,6 +166,7 @@ if (form){
     });
     form.hidden = true;
     document.getElementById("bookDone").hidden = false;
+    window.location.href = mail;
   });
   document.getElementById("againBtn").addEventListener("click", function(){
     form.reset(); form.hidden = false;
