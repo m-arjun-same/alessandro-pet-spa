@@ -7,7 +7,7 @@
 <meta name="description" content="Alessandro Pet Spa — tranquil, luxury pet grooming on Melrose Avenue, Los Angeles, since 2005. Dog & cat grooming, baths, daycare and overnight stays. (323) 644-4946.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preload" href="assets/fonts/newsreader-italic-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/spa.css?v=1">
+<link rel="stylesheet" href="assets/css/spa.css?v=2">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"LocalBusiness","name":"Alessandro Pet Spa","description":"Full-service pet grooming and daycare in Los Angeles since 2005.","telephone":"+1-323-644-4946","email":"alessandropetspa@yahoo.com","priceRange":"$","address":{"@type":"PostalAddress","streetAddress":"7221 Melrose Avenue","addressLocality":"Los Angeles","addressRegion":"CA","postalCode":"90046"},"openingHours":["Mo-Fr 08:00-17:00","Sa-Su 09:00-17:00"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7"}}
 </script>
@@ -50,14 +50,16 @@
       <p class="kick rv">The reveal · drag the comb</p>
       <h2 class="h2 rv">Shaggy in. <em>Stunning out.</em></h2>
       <p class="lede rv">Every appointment ends with this moment. Slide the comb across and watch the groom happen — bath, brush, cut and finish, all in one pair of experienced hands.</p>
-      <div class="ba rv" id="ba" role="slider" aria-label="Before and after grooming comparison" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
-        <img class="ba__after" src="assets/img/work/doggroom/still.webp" alt="Dog after a full groom at Alessandro Pet Spa">
-        <div class="ba__beforeWrap"><img class="ba__before" id="baBefore" src="assets/img/work/doggroom/still.webp" alt="The same dog before the finish — coat dull and overgrown (graded)"></div>
+      <div class="ba rv" id="ba" role="slider" aria-label="Before and after grooming comparison — drag to reveal the groomed dog" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+        <img class="ba__before" id="baBefore" src="assets/img/reveal-before.webp" alt="A shaggy shih tzu with a long, overgrown coat — before grooming">
+        <div class="ba__afterWrap"><img class="ba__after" src="assets/img/reveal-after.webp" alt="A shih tzu after a full groom — coat trimmed short, neat and styled">
+          <span class="ba__tag ba__tag--a">After</span>
+        </div>
         <span class="ba__tag ba__tag--b">Before</span>
-        <span class="ba__tag ba__tag--a">After</span>
         <div class="ba__handle"><span class="ba__grip">⇆</span></div>
+        <span class="ba__hint">Drag to reveal the groom →</span>
       </div>
-      <p class="ba__note rv">Real guests, real grooms — photos from the spa floor.</p>
+      <p class="ba__note rv">Shaggy before, groomed after — drag the comb across to wipe the groom in. Illustrated with two similar shih tzus; photos via Pexels.</p>
     </div>
   </section>
 
@@ -214,6 +216,6 @@
 <script src="assets/js/vendor/lenis.min.js?v=1"></script>
 <script src="assets/js/vendor/gsap.min.js?v=1"></script>
 <script src="assets/js/vendor/ScrollTrigger.min.js?v=1"></script>
-<script src="assets/js/spa.js?v=1"></script>
+<script src="assets/js/spa.js?v=2"></script>
 </body>
 </html>

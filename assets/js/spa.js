@@ -50,12 +50,12 @@ if (window.gsap && window.ScrollTrigger && !reduced){
   var b = document.querySelector(".trust__big span[data-count]"); if (b) b.textContent = "4.7";
 }
 
-/* ---------- THE GROOM WIPE (before/after) — our technique ---------- */
+/* ---------- THE GROOM WIPE — rest shows BEFORE only; drag wipes the groomed AFTER in over it ---------- */
 var ba = document.getElementById("ba");
 if (ba){
-  var pos = 50, dragging = false, touched = false;
+  var pos = 0, dragging = false;
   function setPos(p){
-    pos = Math.max(2, Math.min(98, p));
+    pos = Math.max(0, Math.min(100, p));
     ba.style.setProperty("--pos", pos + "%");
     ba.setAttribute("aria-valuenow", Math.round(pos));
   }
@@ -63,21 +63,14 @@ if (ba){
     var r = ba.getBoundingClientRect();
     return ((e.clientX - r.left) / r.width) * 100;
   }
-  ba.addEventListener("pointerdown", function(e){ dragging = true; touched = true; try{ ba.setPointerCapture(e.pointerId); }catch(_){} setPos(fromEvent(e)); });
+  ba.addEventListener("pointerdown", function(e){ dragging = true; ba.classList.add("is-touched"); try{ ba.setPointerCapture(e.pointerId); }catch(_){} setPos(fromEvent(e)); });
   ba.addEventListener("pointermove", function(e){ if (dragging) setPos(fromEvent(e)); });
   ["pointerup","pointercancel"].forEach(function(ev){ ba.addEventListener(ev, function(){ dragging = false; }); });
   ba.addEventListener("keydown", function(e){
-    if (e.key === "ArrowLeft"){ touched = true; setPos(pos - 4); e.preventDefault(); }
-    if (e.key === "ArrowRight"){ touched = true; setPos(pos + 4); e.preventDefault(); }
+    if (e.key === "ArrowLeft"){ ba.classList.add("is-touched"); setPos(pos - 4); e.preventDefault(); }
+    if (e.key === "ArrowRight"){ ba.classList.add("is-touched"); setPos(pos + 4); e.preventDefault(); }
   });
-  /* invite: gentle comb sweep until the guest takes over */
-  if (window.gsap && !reduced){
-    var invite = { p: 50 };
-    var tween = gsap.to(invite, { p: 68, duration:1.6, ease:"sine.inOut", yoyo:true, repeat:-1,
-      scrollTrigger:{ trigger:ba, start:"top 75%" },
-      onUpdate:function(){ if (!touched) setPos(invite.p); } });
-    ba.addEventListener("pointerdown", function(){ tween.kill(); }, { once:true });
-  }
+  setPos(0);
 }
 
 /* ---------- TWO WORLDS expander ---------- */
